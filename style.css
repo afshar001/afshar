@@ -231,7 +231,7 @@ animation: onoff 1s infinite;
 .cv h1 {
     font-family: digi;
     color:rgb(252, 1, 1);
-    font-size: 30px;
+    font-size: 25px;
     text-shadow: 5px 10px 120px rgb(238, 9, 9);
     opacity: .9;
 }
