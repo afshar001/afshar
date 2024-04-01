@@ -1,0 +1,267 @@
+.background{
+    width: 100%;
+    height: 400px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;   
+    background-image:url(gif-animated-color-bouncing-balls.jpg);
+}
+@font-face {
+    font-family: zero;
+    src: url(zero\ hour.otf);
+}
+@font-face {
+    font-family:  digi;
+    src: url(LOTSOFDOTZ.TTF);
+}
+@font-face{
+    font-family: neo;
+    src: url(neon_pixel-7.ttf);
+}
+.log{
+    position: absolute;
+    width: 40px;
+    height: 140px;
+    border-radius: 20px;
+    top: 15px;
+    left: 30px;
+    text-align: center;
+    display: inline-grid;
+}
+.log P1{
+    font-size: 26px;
+    color: aliceblue;
+    animation: fadeInOut 2s infinite; 
+    animation-delay: 0s;
+}
+.log P2{
+    color: rgb(0, 255, 106);
+    animation: fadeInOut 2s infinite; 
+    animation-delay: .5s;
+}
+.log P3{
+    color: rgb(255, 238, 2);
+    animation: fadeInOut 2s infinite; 
+    animation-delay: 1s;
+}
+.log P4{
+    color: rgb(245, 8, 8);
+    animation: fadeInOut 2s infinite; 
+    animation-delay: 1.5s;
+}
+.log P5{
+    font-size: 80px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0 0 50px transparent;
+    background-image: linear-gradient(to right, red, rgb(111, 0, 255), rgb(255, 0, 221), rgb(0, 0, 0), blue, indigo, violet);
+    animation: heartbeate 1s infinite;
+}
+@keyframes heartbeate {
+    0% {
+      transform: scale(1);
+      transition: .1;
+    }
+    25% {
+      transform: scale(1.2);
+      transition: .1;
+    }
+    50%{
+        transform: scale(.7);
+        transition: .1;
+    }
+    75%{
+        transform: scale(1.2);
+        transition: .1;
+    }
+    100% {
+      transform: scale(1);
+      transition: .1;
+    }
+  }
+  
+@keyframes fadeInOut {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.kkl{
+    position: absolute;
+    background-image: url(ecg-min.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 90px;
+    top: 180px;
+    left: 2px;
+    border-radius: 40px;
+    display: flex;
+}  
+.icon-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 300px;
+    left: 1px;
+}
+
+.icon1, .icon2, .icon3 {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+margin: 4px;
+background-position: center;
+background-size:80px 80px;
+box-shadow: 0 0 50px lime;
+animation: onoff 1s infinite;
+}
+.icon1{
+    background-image: url(GitHub__headpic.jpg);
+}
+.icon2 {
+    background-image: url(SbP6UZh8hSko3B5R3545xQ.jpg);
+}
+.icon3 {
+    background-image: url(ws.png);
+}
+@keyframes onoff {
+    0%{
+        opacity:1;
+        transition: 1s;
+    }
+    100% {
+        opacity: 0;
+       transition: 5s;
+    }
+
+}
+.hover {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    background-color: aqua;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    z-index: 2;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' id='bp'%3E%3Cdefs%3E%3CradialGradient id='grad'%3E%3Cstop offset='0%25' stop-color='%231a1a1a' /%3E%3Cstop offset='100%25' stop-color='%23000' /%3E%3C/radialGradient%3E%3Cpattern id='grid' width='100' height='100' patternUnits='userSpaceOnUse' patternTransform='scale(0.5) skewY(10) skewX(-30)'%3E%3Cpath d='M10 0v100m10 0v-100m10 0v100m10 0v-100m10 0v100m10 0v-100m10 0v100m10 0v-100m10 0v100M0 10h100m0 10h-100m0 10h100m0 10h-100m0 10h100m0 10h-100m0 10h100m0 10h-100m0 10h100' fill='none' stroke='rgba(255,255,255,0.1)' /%3E%3Cpath d='M0 0l0 100 100 0 0-100z' fill='none' stroke='rgba(255,255,255,0.2)' /%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)' /%3E%3Crect width='100%25' height='100%25' fill='url(%23grid)' /%3E%3C/svg%3E");
+    }
+    
+    .notification-center {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .notification {
+        padding: 0.5rem;
+        color: #fff;
+        border-bottom: 1px dotted #e0e0e0;
+    }
+    
+    .notification:last-child {
+        border-bottom: none;
+    }
+    .bell-icon, .circles, .blobulus, .all-notifications {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        cursor: pointer;
+    }
+    .circles {
+        height: 70px;
+        width: 100px;
+    }
+    .blobulus {
+        height: 55px;
+        width: 55px;
+    }
+    .bell-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+.cv {
+ background-position:right bottom, left top;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 350px;
+    height: 370px;
+}
+.menobutton {
+    background: none;
+    box-shadow: 0px 0px 100px whitesmoke;
+    width: 220px;
+    height: 30px;
+    margin: 15px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    display: block;
+     text-align: center;
+}
+.menobutton h2 {
+    font-size: 13px ;
+    font-family: zero;
+    color: azure;
+    text-shadow: 0 0 40px red;
+
+}
+.me {
+    position: absolute;
+
+    right: 1px;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    z-index: 2;
+}
+.cv h1 {
+    font-family: digi;
+    color:rgb(252, 1, 1);
+    opacity: 0.5;
+    font-size: 30px;
+    text-shadow: 5px 10px 3.8px black;
+}
+.cv p {
+    font-family: neo;
+    color:whitesmoke;
+    font-size: 13px;
+    display: ruby;
+}
+#right {
+    float:right;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin: 9%;
+}
+.my {
+    margin-left: 140px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+}
+.my button {
+    box-shadow: 0 0 130px rgb(255, 0, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: 90%;
+    border: none;
+}
+.my p {
+    color: blue;
+    text-align: center;
+}
